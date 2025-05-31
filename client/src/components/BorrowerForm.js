@@ -31,7 +31,7 @@ const BorrowerForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      await axios.post("http://localhost:5000/api/borrowers", data);
+      await axios.post("https://borrower-sign-up.onrender.com", data);
       alert("Borrower Registered Successfully!");
       reset();
     } catch (error) {
